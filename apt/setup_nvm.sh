@@ -1,7 +1,8 @@
 #!/bin/bash
+source ./common/helper.sh
 
 if [[ -f "${HOME}/.nvm/nvm.sh" ]]; then
-    echo "nvm already installed"
+    pprint "'nvm' already installed"
     exit 1
 fi
 
